@@ -15,7 +15,9 @@
 - `js/main.js` — файл JavaScript;
 - `images/` — папка для изображений;
 - `README.md` — описание проекта;
-- `.gitignore` — список файлов, исключённых из Git.
+- `sitemap.xml` — карта сайта;
+- `.gitignore` — список файлов, исключённых из Git;
+- `.gitattributes` — единые переводы строк (LF).
 
 ## Используемые технологии
 
@@ -62,6 +64,8 @@ GitHub Pages: https://egorshishlovttt.github.io/kr1-html-css-shop/
 - Практическая работа 3: добавлена форма заявки, модальное окно и базовая валидация.
 - Практическая работа 4: добавлены CSS-переменные, состояния интерфейса и упорядочена структура стилей.
 - Практическая работа 5: создана многостраничная структура сайта, добавлены единая навигация и якорные ссылки.
+- Практическая работа 6: добавлены Flexbox-навигация и Grid-раскладка карточек и каталога.
+- Практическая работа 7: выполнен рефакторинг CSS-стилей по методологии БЭМ.
 
 ## Реализованные элементы интерфейса
 
@@ -83,4 +87,35 @@ GitHub Pages: https://egorshishlovttt.github.io/kr1-html-css-shop/
 - визуальная подсветка ошибочных полей через `aria-invalid`;
 - структурированный файл `css/style.css`.
 
+## Дополнительные элементы
 
+- `sitemap.xml` — простая карта сайта;
+- Open Graph-теги — базовая разметка для отображения ссылок.
+
+## Использование Flexbox и Grid
+
+В проекте используются:
+
+- Flexbox для основного меню;
+- Flexbox для внутренней структуры карточек товаров;
+- CSS Grid для сетки карточек;
+- CSS Grid для страницы каталога с фильтрами и списком товаров.
+
+## БЭМ-структура проекта
+
+В проекте используются следующие БЭМ-блоки:
+
+- `site-header` — шапка сайта (`site-header__inner`, `site-header__logo`);
+- `site-nav` — основная навигация (`site-nav__list`, `site-nav__item`, `site-nav__link`, модификатор `site-nav__link--active`);
+- `breadcrumbs` — хлебные крошки (`breadcrumbs__link`, `breadcrumbs__current`);
+- `hero` — первый экран главной страницы;
+- `section` — универсальный раздел страницы;
+- `products-grid` — сетка товаров;
+- `product-card` — карточка товара (`product-card__title`, `__description`, `__price`, `__button`, модификаторы `--featured`, `--discount`);
+- `catalog-layout` — структура страницы каталога;
+- `catalog-filters` и `filters-form` — фильтры каталога;
+- `order-dialog` — модальное окно заявки;
+- `order-form` — форма заявки (`order-form__field`, `__label`, `__input`, `__select`, `__textarea`, `__actions`);
+- `button` — кнопка (модификаторы `button--primary`, `button--secondary`, `button--disabled`);
+- `success-message` — сообщение об успешной отправке;
+- `site-footer` — подвал сайта.
