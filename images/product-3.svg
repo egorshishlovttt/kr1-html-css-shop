@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-labelledby="t3">
+  <title id="t3">Смарт-часы</title>
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b3fa0"/>
+      <stop offset="1" stop-color="#9b7fe0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g3)"/>
+  <rect x="160" y="40" width="80" height="60" rx="14" fill="#fff" opacity="0.7"/>
+<rect x="160" y="200" width="80" height="60" rx="14" fill="#fff" opacity="0.7"/>
+<rect x="140" y="95" width="120" height="110" rx="26" fill="#fff"/>
+<rect x="158" y="113" width="84" height="74" rx="14" fill="#5b3fa0" opacity="0.4"/>
+  <text x="200" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#fff" opacity="0.9">Смарт-часы</text>
+</svg>

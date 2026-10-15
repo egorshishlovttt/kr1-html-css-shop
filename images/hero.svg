@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-labelledby="th">
+  <title id="th">Корзина с покупками</title>
+  <defs>
+    <linearGradient id="gh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0057b8"/>
+      <stop offset="1" stop-color="#58b8d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" rx="24" fill="url(#gh)"/>
+  <path d="M120 110 h260 l-30 110 h-200 Z" fill="#fff"/>
+  <path d="M80 70 h40 l20 40" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="175" cy="255" r="16" fill="#fff"/>
+  <circle cx="325" cy="255" r="16" fill="#fff"/>
+  <g fill="#0057b8" opacity="0.35">
+    <rect x="160" y="135" width="40" height="60" rx="8"/>
+    <rect x="215" y="125" width="40" height="70" rx="8"/>
+    <rect x="270" y="145" width="40" height="50" rx="8"/>
+  </g>
+</svg>

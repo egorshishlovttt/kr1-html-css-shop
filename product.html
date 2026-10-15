@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Беспроводные наушники: описание, характеристики, цена, отзывы и форма заявки в учебном интернет-магазине.">
+  <title>Беспроводные наушники — Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Товар — Учебный интернет-магазин">
+  <meta property="og:description" content="Карточка товара учебного интернет-магазина.">
+  <meta property="og:image" content="https://egorshishlovttt.github.io/kr1-html-css-shop/images/preview.jpg">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#faq">Вопросы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <a class="breadcrumbs__link breadcrumbs__link--next" href="catalog.html">Каталог</a>
+      <span class="breadcrumbs__current" id="breadcrumb-current">Беспроводные наушники</span>
+    </nav>
+
+    <!-- Разметка заполнена данными первого товара; js/products.js подставляет товар по ?id= -->
+    <article class="product">
+      <figure class="product__gallery">
+        <img
+          class="product__image"
+          id="product-image"
+          src="images/product-1.svg"
+          alt="Беспроводные наушники чёрного цвета, вид спереди"
+          width="400"
+          height="300"
+          fetchpriority="high"
+        >
+        <figcaption class="product__caption" id="product-caption">Беспроводные наушники, цвет «чёрный»</figcaption>
+      </figure>
+
+      <div class="product__summary">
+        <p class="product__category" id="product-category">Аудио</p>
+        <h1 class="product__title" id="product-title">Беспроводные наушники</h1>
+        <span class="product__badge product__badge--hit" id="product-badge">Хит продаж</span>
+
+        <p class="product__rating">
+          <span class="product__stars" id="product-stars" aria-label="Оценка 4,8 из 5">★★★★★</span>
+          <span class="product__rating-value" id="product-rating-value">4,8</span>
+          <a class="product__rating-link" id="product-rating-link" href="#product-reviews">2 отзыва</a>
+        </p>
+
+        <p class="product__price">
+          <s class="product__old-price" id="product-old-price" hidden></s>
+          <span id="product-price-value">2 990 руб.</span>
+        </p>
+
+        <p class="product__availability product__availability--in-stock" id="product-availability">В наличии, доставка 1–2 дня</p>
+
+        <p class="product__description" id="product-description">
+          Полноразмерные беспроводные наушники с активным шумоподавлением.
+          До 30 часов работы от одного заряда, быстрая зарядка за 10 минут
+          даёт ещё 5 часов музыки. Складная конструкция и чехол в комплекте.
+        </p>
+
+        <ul class="product__features" id="product-features">
+          <li class="product__feature">Активное шумоподавление</li>
+          <li class="product__feature">Bluetooth 5.3, подключение к двум устройствам</li>
+          <li class="product__feature">Микрофон с подавлением ветра</li>
+        </ul>
+
+        <div class="product__actions">
+          <button class="button button--primary" id="product-order" type="button" data-product="Беспроводные наушники">
+            Заказать
+          </button>
+          <a class="button button--secondary" href="catalog.html">Назад в каталог</a>
+        </div>
+      </div>
+    </article>
+
+    <section class="section" id="specs">
+      <h2 class="section__title">Характеристики</h2>
+
+      <table class="product-table">
+        <caption class="product-table__caption">Характеристики товара</caption>
+        <thead>
+          <tr>
+            <th class="product-table__head" scope="col">Параметр</th>
+            <th class="product-table__head" scope="col">Значение</th>
+          </tr>
+        </thead>
+        <tbody id="product-specs">
+          <tr>
+            <td class="product-table__cell">Категория</td>
+            <td class="product-table__cell">Аудио</td>
+          </tr>
+          <tr>
+            <td class="product-table__cell">Тип</td>
+            <td class="product-table__cell">Полноразмерные, закрытые</td>
+          </tr>
+          <tr>
+            <td class="product-table__cell">Подключение</td>
+            <td class="product-table__cell">Bluetooth 5.3, кабель 3,5 мм</td>
+          </tr>
+          <tr>
+            <td class="product-table__cell">Время работы</td>
+            <td class="product-table__cell">до 30 часов</td>
+          </tr>
+          <tr>
+            <td class="product-table__cell">Вес</td>
+            <td class="product-table__cell">250 г</td>
+          </tr>
+          <tr>
+            <td class="product-table__cell">Гарантия</td>
+            <td class="product-table__cell">12 месяцев</td>
+          </tr>
+          <tr>
+            <td class="product-table__cell">Цена</td>
+            <td class="product-table__cell">2 990 руб.</td>
+          </tr>
+          <tr>
+            <td class="product-table__cell">Наличие</td>
+            <td class="product-table__cell">В наличии</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section reviews" id="product-reviews">
+      <h2 class="section__title">Отзывы о товаре</h2>
+
+      <div class="reviews__list" id="product-reviews-list">
+        <article class="review">
+          <header class="review__header">
+            <span class="review__avatar" aria-hidden="true">АК</span>
+            <div class="review__meta">
+              <p class="review__author">Анна К.</p>
+              <time class="review__date" datetime="2026-09-28">28 сентября 2026</time>
+            </div>
+          </header>
+          <p class="review__rating" aria-label="Оценка 5 из 5">★★★★★</p>
+          <p class="review__text">Шумоподавление реально работает: в метро музыку слышно без прибавления громкости.</p>
+        </article>
+
+        <article class="review">
+          <header class="review__header">
+            <span class="review__avatar" aria-hidden="true">ИП</span>
+            <div class="review__meta">
+              <p class="review__author">Игорь П.</p>
+              <time class="review__date" datetime="2026-10-06">6 октября 2026</time>
+            </div>
+          </header>
+          <p class="review__rating" aria-label="Оценка 4 из 5">★★★★☆</p>
+          <p class="review__text">Звук и батарея отличные, но амбушюры немного давят после двух часов.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="related">
+      <h2 class="section__title">Похожие товары</h2>
+
+      <div class="products-grid" id="related-grid">
+        <article class="product-card product-card--discount">
+          <span class="product-card__badge product-card__badge--discount">Скидка</span>
+          <div class="product-card__media">
+            <img class="product-card__image" src="images/product-7.svg" alt="Портативная колонка" width="400" height="300" loading="lazy">
+          </div>
+          <p class="product-card__category">Аудио</p>
+          <h3 class="product-card__title"><a class="product-card__link" href="product.html?id=7">Портативная колонка</a></h3>
+          <p class="product-card__description">Защита от брызг, 12 часов музыки.</p>
+          <p class="product-card__price"><s class="product-card__old-price">2 990 руб.</s> 2 490 руб.</p>
+        </article>
+
+        <article class="product-card product-card--new">
+          <span class="product-card__badge product-card__badge--new">Новинка</span>
+          <div class="product-card__media">
+            <img class="product-card__image" src="images/product-3.svg" alt="Смарт-часы" width="400" height="300" loading="lazy">
+          </div>
+          <p class="product-card__category">Гаджеты</p>
+          <h3 class="product-card__title"><a class="product-card__link" href="product.html?id=3">Смарт-часы</a></h3>
+          <p class="product-card__description">Пульс, шаги, уведомления, 7 дней без подзарядки.</p>
+          <p class="product-card__price">5 990 руб.</p>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img class="product-card__image" src="images/product-8.svg" alt="Беспроводная мышь" width="400" height="300" loading="lazy">
+          </div>
+          <p class="product-card__category">Гаджеты</p>
+          <h3 class="product-card__title"><a class="product-card__link" href="product.html?id=8">Беспроводная мышь</a></h3>
+          <p class="product-card__description">Бесшумные кнопки, работа от одной батарейки год.</p>
+          <p class="product-card__price">1 290 руб.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Наверх" title="Наверх">
+    <span class="to-top__icon" aria-hidden="true">&#8593;</span>
+  </button>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <button class="order-dialog__close" type="button" id="close-order-dialog" aria-label="Закрыть окно">
+      &times;
+    </button>
+
+    <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+    <p class="order-dialog__product" id="order-dialog-product" hidden>
+      Товар: <strong id="order-dialog-product-name"></strong>
+    </p>
+
+    <form class="order-form" id="order-form" action="#" method="post" novalidate>
+      <input id="selected-product" name="selected-product" type="hidden">
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-name">Имя</label>
+        <input class="order-form__input" id="order-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" aria-describedby="order-name-error" required>
+        <small class="order-form__error" id="order-name-error"></small>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-email">E-mail</label>
+        <input class="order-form__input" id="order-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" aria-describedby="order-email-error" required>
+        <small class="order-form__error" id="order-email-error"></small>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-phone">Телефон</label>
+        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" aria-describedby="order-phone-hint order-phone-error" required>
+        <small class="order-form__hint" id="order-phone-hint">Формат: +7 (900) 000-00-00</small>
+        <small class="order-form__error" id="order-phone-error"></small>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-date">Дата связи</label>
+        <input class="order-form__input" id="order-date" name="date" type="date">
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-topic">Тема заявки</label>
+        <select class="order-form__select" id="order-topic" name="topic" aria-describedby="order-topic-error" required>
+          <option value="">Выберите тему</option>
+          <option value="product">Заказ товара</option>
+          <option value="consultation">Консультация</option>
+          <option value="delivery">Доставка</option>
+        </select>
+        <small class="order-form__error" id="order-topic-error"></small>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-comment">Комментарий</label>
+        <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
+      </div>
+
+      <div class="order-form__field order-form__field--checkbox">
+        <label class="order-form__label order-form__label--inline" for="order-agreement">
+          <input class="order-form__checkbox" id="order-agreement" name="agreement" type="checkbox" aria-describedby="order-agreement-error" required>
+          Я согласен на обработку данных
+        </label>
+        <small class="order-form__error" id="order-agreement-error"></small>
+      </div>
+
+      <div class="order-form__actions">
+        <button class="button button--primary" type="submit">Отправить заявку</button>
+        <button class="button button--secondary" type="button" id="cancel-order-dialog">Отмена</button>
+      </div>
+    </form>
+  </dialog>
+
+  <p class="success-message" id="success-message" role="status" aria-live="polite" hidden>
+    Форма успешно отправлена!
+  </p>
+</body>
+</html>
