@@ -43,6 +43,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 170px;  /* якорные ссылки не прячутся под шапкой */
 }
 
 body {
@@ -136,6 +137,12 @@ a:focus-visible {
 .site-footer {
   padding: var(--space-lg);
   background-color: var(--color-surface);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 80;       
 }
 
 .site-header__inner {
