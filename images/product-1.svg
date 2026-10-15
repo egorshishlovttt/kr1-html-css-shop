@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-labelledby="t1">
+  <title id="t1">Наушники</title>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0057b8"/>
+      <stop offset="1" stop-color="#4f8fe0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g1)"/>
+  <path d="M120 190 v-40 a80 80 0 0 1 160 0 v40" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+<rect x="104" y="170" width="40" height="60" rx="12" fill="#fff"/>
+<rect x="256" y="170" width="40" height="60" rx="12" fill="#fff"/>
+  <text x="200" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#fff" opacity="0.9">Наушники</text>
+</svg>
